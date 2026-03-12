@@ -117,7 +117,7 @@ export default function ResultsPage() {
             <ActionPlan data={data} attacks={attacks} />
 
             {/* 5. Official Resources Quick Links */}
-            <section className="rounded-xl border border-border/60 bg-card/80 p-5 md:p-6">
+            <section className="rounded-xl border border-border bg-card p-5 shadow-sm md:p-6">
               <div className="mb-4 flex items-center gap-2">
                 <BookOpen className="size-4 text-primary" />
                 <h2 className="text-sm font-semibold uppercase tracking-wider text-primary">
@@ -152,7 +152,7 @@ export default function ResultsPage() {
                     href={resource.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-start gap-3 rounded-lg border border-border/60 bg-secondary/40 p-3.5 transition-colors hover:border-primary/40 hover:bg-secondary/80"
+                    className="group flex items-start gap-3 rounded-lg border border-border bg-secondary p-3.5 transition-colors hover:border-primary/40 hover:bg-secondary/80"
                   >
                     <div className="flex size-8 shrink-0 items-center justify-center rounded-md bg-primary/10 group-hover:bg-primary/20">
                       <ExternalLink className="size-3.5 text-primary" />

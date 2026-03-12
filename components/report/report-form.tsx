@@ -101,7 +101,7 @@ export function ReportForm() {
       <ProgressStepper currentStep={currentStep} />
 
       {/* Step card */}
-      <div className="rounded-xl border border-border/60 bg-card/80 p-5 md:p-8">
+      <div className="rounded-xl border border-border bg-card p-5 shadow-sm md:p-8">
         {/* Step header */}
         <div className="mb-6">
           <div className="mb-1 flex items-center gap-2">
@@ -140,7 +140,7 @@ export function ReportForm() {
         </div>
 
         {/* Navigation footer */}
-        <div className="mt-8 flex items-center justify-between border-t border-border/60 pt-6">
+        <div className="mt-8 flex items-center justify-between border-t border-border pt-6">
           <Button
             variant="outline"
             size="sm"

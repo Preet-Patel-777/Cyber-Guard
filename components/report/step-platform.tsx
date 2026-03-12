@@ -51,7 +51,7 @@ export function StepPlatform({ data, onChange }: StepPlatformProps) {
               "flex items-center gap-3 rounded-lg border p-4 text-left transition-all",
               isSelected
                 ? "border-primary bg-primary/10 ring-1 ring-primary/30"
-                : "border-border/60 bg-secondary/40 hover:border-primary/40 hover:bg-secondary/80"
+                : "border-border bg-secondary hover:border-primary/40 hover:bg-secondary/80"
             )}
           >
             <div

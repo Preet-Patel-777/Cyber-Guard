@@ -42,7 +42,7 @@ export function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button asChild size="lg" className="text-base px-8 h-12 font-semibold shadow-[0_0_20px_rgba(0,212,255,0.15)]">
+            <Button asChild size="lg" className="text-base px-8 h-12 font-semibold">
               <Link href="/report">
                 Start Report
                 <ArrowRight className="ml-1 size-4" />
@@ -59,11 +59,11 @@ export function HeroSection() {
           </div>
 
           {/* Emergency Helpline */}
-          <div className="mt-8 inline-flex items-center gap-2 rounded-lg border border-destructive/20 bg-destructive/5 px-4 py-2.5 text-sm">
-            <AlertTriangle className="size-4 text-destructive" />
-            <span className="text-muted-foreground">
+          <div className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm">
+            <AlertTriangle className="size-4 text-white" />
+            <span className="text-white">
               For financial fraud emergencies, call{" "}
-              <a href="tel:1930" className="font-bold text-foreground">
+              <a href="tel:1930" className="font-bold text-white underline">
                 1930
               </a>{" "}
               immediately
@@ -98,7 +98,7 @@ export function HeroSection() {
           ].map((item) => (
             <div
               key={item.step}
-              className="group relative rounded-xl border border-border/60 bg-card/80 p-6 transition-all hover:border-primary/30 hover:bg-card"
+              className="group relative rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:border-primary/40 hover:shadow-md"
             >
               <div className="absolute right-4 top-4 font-mono text-xs text-muted-foreground/40">
                 {item.step}

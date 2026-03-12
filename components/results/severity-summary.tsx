@@ -34,33 +34,33 @@ export function SeveritySummary({ attacks }: SeveritySummaryProps) {
       icon: ShieldAlert,
       label: "Critical Threat Level",
       sublabel: "Immediate action required. Your data and/or finances are at serious risk.",
-      iconColor: "text-red-400",
-      bg: "bg-red-500/5",
+      iconColor: "text-red-600",
+      bg: "bg-red-500/10",
       border: "border-red-500/30",
     },
     High: {
       icon: ShieldAlert,
       label: "High Threat Level",
       sublabel: "Urgent action recommended. Your accounts or identity may be compromised.",
-      iconColor: "text-orange-400",
-      bg: "bg-orange-500/5",
+      iconColor: "text-orange-600",
+      bg: "bg-orange-500/10",
       border: "border-orange-500/30",
     },
     Medium: {
       icon: Shield,
       label: "Medium Threat Level",
       sublabel: "Action needed. There are signs of compromise that require attention.",
-      iconColor: "text-yellow-400",
-      bg: "bg-yellow-500/5",
-      border: "border-yellow-500/30",
+      iconColor: "text-amber-600",
+      bg: "bg-amber-500/10",
+      border: "border-amber-500/30",
     },
     Low: {
       icon: ShieldCheck,
       label: "Low Threat Level",
       sublabel: "Precautionary action advised. Some suspicious activity was detected.",
-      iconColor: "text-green-400",
-      bg: "bg-green-500/5",
-      border: "border-green-500/30",
+      iconColor: "text-emerald-600",
+      bg: "bg-emerald-500/10",
+      border: "border-emerald-500/30",
     },
   }
 
@@ -101,26 +101,26 @@ export function SeveritySummary({ attacks }: SeveritySummaryProps) {
               </span>
             )}
             {counts.Critical > 0 && (
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-red-500/10 px-3 py-1 text-xs font-medium text-red-400">
-                <span className="size-1.5 rounded-full bg-red-500" />
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-red-500/10 px-3 py-1 text-xs font-medium text-red-600">
+                <span className="size-1.5 rounded-full bg-red-600" />
                 {counts.Critical} Critical
               </span>
             )}
             {counts.High > 0 && (
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-500/10 px-3 py-1 text-xs font-medium text-orange-400">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-500/10 px-3 py-1 text-xs font-medium text-orange-600">
                 <span className="size-1.5 rounded-full bg-orange-500" />
                 {counts.High} High
               </span>
             )}
             {counts.Medium > 0 && (
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-yellow-500/10 px-3 py-1 text-xs font-medium text-yellow-400">
-                <span className="size-1.5 rounded-full bg-yellow-500" />
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-500/10 px-3 py-1 text-xs font-medium text-amber-600">
+                <span className="size-1.5 rounded-full bg-amber-500" />
                 {counts.Medium} Medium
               </span>
             )}
             {counts.Low > 0 && (
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
-                <span className="size-1.5 rounded-full bg-green-500" />
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-600">
+                <span className="size-1.5 rounded-full bg-emerald-600" />
                 {counts.Low} Low
               </span>
             )}

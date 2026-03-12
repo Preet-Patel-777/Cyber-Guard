@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button"
 
 export function CTASection() {
   return (
-    <section className="border-t border-border/60">
+    <section className="border-t border-border">
       <div className="mx-auto max-w-7xl px-4 py-20 lg:px-8 lg:py-28">
-        <div className="relative mx-auto max-w-3xl rounded-2xl border border-primary/20 bg-card/80 px-6 py-14 text-center sm:px-12">
-          {/* Subtle glow */}
+        <div className="relative mx-auto max-w-3xl rounded-2xl border border-border bg-card px-6 py-14 text-center shadow-sm sm:px-12">
+          {/* Subtle accent */}
           <div className="pointer-events-none absolute inset-0 rounded-2xl bg-primary/5" />
 
           <div className="relative">
@@ -25,7 +25,7 @@ export function CTASection() {
             </p>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Button asChild size="lg" className="text-base px-8 h-12 font-semibold shadow-[0_0_20px_rgba(0,212,255,0.15)]">
+              <Button asChild size="lg" className="text-base px-8 h-12 font-semibold">
                 <Link href="/report">
                   Start Report Now
                   <ArrowRight className="ml-1 size-4" />

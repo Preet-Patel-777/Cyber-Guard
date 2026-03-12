@@ -40,7 +40,7 @@ function RadioGroup({
                 "rounded-lg border px-4 py-2 text-sm font-medium transition-all",
                 isSelected
                   ? "border-primary bg-primary/10 text-primary ring-1 ring-primary/30"
-                  : "border-border/60 bg-secondary/40 text-muted-foreground hover:border-primary/40 hover:bg-secondary/80"
+                  : "border-border bg-secondary text-muted-foreground hover:border-primary/40 hover:bg-secondary/80"
               )}
             >
               {option}
@@ -108,7 +108,7 @@ export function StepTimeline({ data, onChange }: StepTimelineProps) {
         onSelect={(v) => onChange({ whenHappened: v })}
       />
 
-      <div className="h-px bg-border/60" />
+      <div className="h-px bg-border" />
 
       <RadioGroup
         label="Did you click any suspicious link?"
@@ -124,7 +124,7 @@ export function StepTimeline({ data, onChange }: StepTimelineProps) {
         onSelect={(v) => onChange({ downloadedFile: v })}
       />
 
-      <div className="h-px bg-border/60" />
+      <div className="h-px bg-border" />
 
       <RadioGroup
         label="Did you share an OTP with anyone?"
@@ -140,7 +140,7 @@ export function StepTimeline({ data, onChange }: StepTimelineProps) {
         onSelect={(v) => onChange({ allowedRemoteAccess: v })}
       />
 
-      <div className="h-px bg-border/60" />
+      <div className="h-px bg-border" />
 
       <StarRating
         label="How concerned are you?"

@@ -100,7 +100,7 @@ export function StepPermissions({ data, onChange }: StepPermissionsProps) {
                       "flex items-center gap-2.5 rounded-lg border px-3 py-2.5 text-left transition-all",
                       isChecked
                         ? "border-primary bg-primary/10 ring-1 ring-primary/30"
-                        : "border-border/60 bg-secondary/40 hover:border-primary/40 hover:bg-secondary/80"
+                        : "border-border bg-secondary hover:border-primary/40 hover:bg-secondary/80"
                     )}
                   >
                     <div

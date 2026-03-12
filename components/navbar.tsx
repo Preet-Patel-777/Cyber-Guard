@@ -18,7 +18,7 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-border bg-background backdrop-blur-xl">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
@@ -67,7 +67,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="border-t border-border/60 bg-background px-4 pb-4 md:hidden">
+        <div className="border-t border-border bg-background px-4 pb-4 md:hidden">
           <div className="flex flex-col gap-1 pt-3">
             {navLinks.map((link) => (
               <Link
@@ -84,7 +84,7 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <div className="mt-2 border-t border-border/60 pt-3">
+            <div className="mt-2 border-t border-border pt-3">
               <Button asChild className="w-full" size="sm">
                 <Link href="/report" onClick={() => setMobileOpen(false)}>
                   Start Report

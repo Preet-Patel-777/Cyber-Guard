@@ -51,30 +51,30 @@ const SEVERITY_CONFIG: Record<
   Critical: {
     label: "Critical",
     bg: "bg-red-500/10",
-    text: "text-red-400",
+    text: "text-red-600",
     border: "border-red-500/30",
-    dot: "bg-red-500",
+    dot: "bg-red-600",
   },
   High: {
     label: "High",
     bg: "bg-orange-500/10",
-    text: "text-orange-400",
+    text: "text-orange-600",
     border: "border-orange-500/30",
     dot: "bg-orange-500",
   },
   Medium: {
     label: "Medium",
-    bg: "bg-yellow-500/10",
-    text: "text-yellow-400",
-    border: "border-yellow-500/30",
-    dot: "bg-yellow-500",
+    bg: "bg-amber-500/10",
+    text: "text-amber-600",
+    border: "border-amber-500/30",
+    dot: "bg-amber-500",
   },
   Low: {
     label: "Low",
-    bg: "bg-green-500/10",
-    text: "text-green-400",
-    border: "border-green-500/30",
-    dot: "bg-green-500",
+    bg: "bg-emerald-500/10",
+    text: "text-emerald-600",
+    border: "border-emerald-500/30",
+    dot: "bg-emerald-600",
   },
 }
 
@@ -93,7 +93,7 @@ export function ThreatCard({ attack, index }: ThreatCardProps) {
       className={cn(
         "overflow-hidden rounded-xl border transition-all",
         sev.border,
-        expanded ? "bg-card" : "bg-card/60 hover:bg-card/80"
+        expanded ? "bg-card shadow-sm" : "bg-card shadow-sm hover:shadow-md"
       )}
     >
       {/* Header - always visible */}
@@ -146,16 +146,16 @@ export function ThreatCard({ attack, index }: ThreatCardProps) {
         />
       </button>
 
-      {/* Expanded content */}
+          {/* Expanded content */}
       {expanded && (
-        <div className="border-t border-border/60 px-5 pb-6 pt-5 md:px-6">
+        <div className="border-t border-border px-5 pb-6 pt-5 md:px-6">
           {/* Description */}
           <p className="text-sm leading-relaxed text-muted-foreground">
             {attack.description}
           </p>
 
           {/* Attacker access */}
-          <div className="mt-5 rounded-lg border border-border/60 bg-secondary/40 p-4">
+          <div className="mt-5 rounded-lg border border-border bg-secondary p-4">
             <div className="mb-2 flex items-center gap-2">
               <Crosshair className="size-3.5 text-destructive" />
               <span className="text-xs font-semibold uppercase tracking-wider text-destructive">

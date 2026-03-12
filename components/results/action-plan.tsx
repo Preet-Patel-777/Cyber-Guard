@@ -257,36 +257,36 @@ export function ActionPlan({ data, attacks }: ActionPlanProps) {
       priority: "now",
       label: "Do Right Now",
       icon: AlertTriangle,
-      dotColor: "bg-red-500",
-      headerBg: "bg-red-500/10",
-      headerText: "text-red-400",
-      borderColor: "border-red-500/30",
-      checkBg: "bg-red-500",
-      checkBorder: "border-red-500",
+    dotColor: "bg-[#dc2626]",
+    headerBg: "bg-[#dc2626]/10",
+    headerText: "text-[#dc2626]",
+    borderColor: "border-[#dc2626]/30",
+    checkBg: "bg-[#dc2626]",
+    checkBorder: "border-[#dc2626]",
       items: buildNowItems(data, attacks),
     },
     {
       priority: "today",
       label: "Do Today",
       icon: Clock,
-      dotColor: "bg-yellow-500",
-      headerBg: "bg-yellow-500/10",
-      headerText: "text-yellow-400",
-      borderColor: "border-yellow-500/30",
-      checkBg: "bg-yellow-500",
-      checkBorder: "border-yellow-500",
+    dotColor: "bg-amber-500",
+    headerBg: "bg-amber-500/10",
+    headerText: "text-amber-600",
+    borderColor: "border-amber-500/30",
+    checkBg: "bg-amber-500",
+    checkBorder: "border-amber-500",
       items: buildTodayItems(data, attacks),
     },
     {
       priority: "week",
       label: "Do This Week",
       icon: CalendarDays,
-      dotColor: "bg-emerald-500",
-      headerBg: "bg-emerald-500/10",
-      headerText: "text-emerald-400",
-      borderColor: "border-emerald-500/30",
-      checkBg: "bg-emerald-500",
-      checkBorder: "border-emerald-500",
+    dotColor: "bg-emerald-600",
+    headerBg: "bg-emerald-500/10",
+    headerText: "text-emerald-700",
+    borderColor: "border-emerald-500/30",
+    checkBg: "bg-emerald-600",
+    checkBorder: "border-emerald-600",
       items: buildWeekItems(data, attacks),
     },
   ]
@@ -363,7 +363,7 @@ export function ActionPlan({ data, attacks }: ActionPlanProps) {
             </div>
 
             {/* Checklist items */}
-            <div className="flex flex-col divide-y divide-border/40">
+            <div className="flex flex-col divide-y divide-border">
               {section.items.map((item) => {
                 const isChecked = checked.has(item.id)
                 return (
@@ -384,7 +384,7 @@ export function ActionPlan({ data, attacks }: ActionPlanProps) {
                       className={cn(
                         "mt-0.5 flex size-5 shrink-0 items-center justify-center rounded border transition-all",
                         isChecked
-                          ? cn(section.checkBg, section.checkBorder, "text-background")
+                          ? cn(section.checkBg, section.checkBorder, "text-white")
                           : "border-border bg-secondary"
                       )}
                     >

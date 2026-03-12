@@ -12,7 +12,7 @@ export function ProgressStepper({ currentStep }: ProgressStepperProps) {
   const percentage = ((currentStep + 1) / STEP_LABELS.length) * 100
 
   return (
-    <div className="rounded-xl border border-border/60 bg-card/80 p-5 md:p-6">
+    <div className="rounded-xl border border-border bg-card p-5 shadow-sm md:p-6">
       {/* Top label row */}
       <div className="mb-3 flex items-center justify-between text-sm">
         <span className="font-medium text-foreground">

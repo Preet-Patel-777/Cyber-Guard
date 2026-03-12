@@ -3,7 +3,7 @@ import { Shield } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/60 bg-card/50">
+    <footer className="border-t border-border bg-[#f1f3f5]">
       <div className="mx-auto max-w-7xl px-4 py-12 lg:px-8">
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
@@ -80,7 +80,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-center gap-3 border-t border-border/60 pt-8 text-center md:flex-row md:justify-between md:text-left">
+        <div className="mt-10 flex flex-col items-center gap-3 border-t border-border pt-8 text-center md:flex-row md:justify-between md:text-left">
           <p className="text-xs text-muted-foreground">
             CyberGuard is an educational advisory tool. For emergencies, call
             the Cyber Crime Helpline at{" "}

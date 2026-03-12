@@ -97,7 +97,7 @@ export default function ResourcesPage() {
                 href={resource.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col rounded-xl border border-border/60 bg-card/80 p-6 transition-all hover:border-primary/30 hover:bg-card"
+                className="group flex flex-col rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:border-primary/40 hover:shadow-md"
               >
                 <div className="mb-4 flex items-center justify-between">
                   <div className="flex size-10 items-center justify-center rounded-lg bg-primary/10 ring-1 ring-primary/20 text-primary group-hover:bg-primary/15 transition-colors">

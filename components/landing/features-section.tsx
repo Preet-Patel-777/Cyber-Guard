@@ -48,7 +48,7 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="border-t border-border/60 bg-card/30">
+    <section className="border-t border-border bg-[#f8f9fa]">
       <div className="mx-auto max-w-7xl px-4 py-20 lg:px-8 lg:py-28">
         {/* Section Header */}
         <div className="mx-auto max-w-2xl text-center">
@@ -69,7 +69,7 @@ export function FeaturesSection() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group rounded-xl border border-border/60 bg-card/60 p-6 transition-all hover:border-primary/20 hover:bg-card"
+              className="group rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:border-primary/40 hover:shadow-md"
             >
               <div className="mb-4 flex size-10 items-center justify-center rounded-lg bg-primary/10 ring-1 ring-primary/20 text-primary group-hover:bg-primary/15 transition-colors">
                 <feature.icon className="size-5" />
